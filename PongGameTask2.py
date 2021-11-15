@@ -46,8 +46,8 @@ ball.shape("circle")    # defining the shape of the ball how it will appear squa
 ball.color("Yellow")     # defining the color of the ball.
 ball.penup()            # for lifting.
 ball.goto(0, 0)
-ball.dx = 2             # axis definition
-ball.dy = 2             # axis definition
+ball.dx = 0.1             # axis definition
+ball.dy = 0.1             # axis definition
 
 # Code for Pen
 
@@ -64,22 +64,22 @@ pen.write("Player A: 0  Player B: 0", align="center", font=("Courier", 24, "norm
 
 def paddle_a_up():
     y = paddle_a.ycor()
-    y += 20
+    y += 30
     paddle_a.sety(y)
 
 def paddle_a_down():
     y = paddle_a.ycor()
-    y -= 20
+    y -= 30
     paddle_a.sety(y)
 
 def paddle_b_up():
     y = paddle_b.ycor()
-    y += 20
+    y += 30
     paddle_b.sety(y)
 
 def paddle_b_down():
     y = paddle_b.ycor()
-    y -= 20
+    y -= 30
     paddle_b.sety(y)
 
 # Keyboard bindings
